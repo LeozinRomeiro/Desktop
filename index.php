@@ -42,7 +42,7 @@
             <tbody>
             <?php
               include 'conecta.php';
-              $pesquisa = mysqli_query($conn, "SELECT * FROM cliente");
+              $pesquisa = mysqli_query($con, "SELECT * FROM cliente");
               $row = mysqli_num_rows($pesquisa);
               if ($row > 0) {
                 while ($registro = $pesquisa -> fetch_array()) {
